@@ -2,7 +2,7 @@
 # Math library
 # Author: Sébastien Combéfis
 # Version: February 8, 2018
-
+import math
 def fact(n):
 	"""Computes the factorial of a natural number.
 	
@@ -10,7 +10,11 @@ def fact(n):
 	Post: Returns the factorial of 'n'.
 	Throws: ValueError if n < 0
 	"""
-	pass
+	if n >= 0:
+		return math.factorial(n)
+	else:
+		print('Invalid input')
+
 
 def roots(a, b, c):
 	"""Computes the roots of the ax^2 + bx + x = 0 polynomial.
