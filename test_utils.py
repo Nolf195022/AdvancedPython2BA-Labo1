@@ -10,7 +10,7 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(utils.fact(9),math.factorial(9))
     
     def test_roots(self):
-        self.assertEqual(utils.roots(1,0,-1),(-1.0,1.2))
+        self.assertEqual(utils.roots(1,0,-1),(-1.0,1.0))
     
     def test_integrate(self):
         # À compléter...
